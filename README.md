@@ -12,33 +12,33 @@ Web portofolio pribadi yang mengadopsi estetika **Neo-Brutalism UI** dengan kont
 
 ## 🚀 Technical Stack
 Sistem ini dibangun menggunakan teknologi berikut:
-* [cite_start]**Framework:** Tailwind CSS (Custom Config)
+* **Framework:** Tailwind CSS (Custom Config)
 * **Fonts:** Inter (Headlines) & JetBrains Mono (Body/Code)
 * **Icons:** Material Symbols Outlined
 * **Interactions:** Intersection Observer API untuk Navigasi Aktif & Smooth Scrolling
 
 ## 📂 Project Experience
-* [cite_start]**Smart-Stay:** Solusi IoT & AIoT untuk manajemen akses kost menggunakan *Facial Access Control* dan platform web real-time[cite: 11, 12, 13].
-* [cite_start]**Smart Chat TB:** Aplikasi mobile berbasis AI Chatbot yang dirancang untuk deteksi dini dan pemantauan pasien Tuberkulosis[cite: 15, 17, 48].
-* [cite_start]**Sistem Pemasaran & Pemesanan Web:** Platform e-commerce untuk Batik Ganasan & Twee Coffee guna meningkatkan visibilitas produk lokal[cite: 22, 24].
-* [cite_start]**Klinik Pratama Amanah:** Sistem manajemen rekam medis digital dan reservasi online berbasis web[cite: 19, 21].
+* **Smart-Stay:** Solusi IoT & AIoT untuk manajemen akses kost menggunakan *Facial Access Control* dan platform web real-time.
+* **Smart Chat TB:** Aplikasi mobile berbasis AI Chatbot yang dirancang untuk deteksi dini dan pemantauan pasien Tuberkulosis.
+* **Sistem Pemasaran & Pemesanan Web:** Platform e-commerce untuk Batik Ganasan & Twee Coffee guna meningkatkan visibilitas produk lokal.
+* **Klinik Pratama Amanah:** Sistem manajemen rekam medis digital dan reservasi online berbasis web.
 
 ## 🔬 Research & Publication
 **Smart Chat TB: Aplikasi Mobile untuk Deteksi Dini dan Monitoring Pengobatan Tuberkulosis**
-* [cite_start]**Journal:** SISTEMATIK: Journal of Informatics and Information Systems (2025)[cite: 48].
-* [cite_start]**Status:** Published[cite: 46].
+* **Journal:** SISTEMATIK: Journal of Informatics and Information Systems (2025).
+* **Status:** Published.
 * **Link:** [Read Paper](https://journal.publinesia.com/index.php/sistematik/article/view/192)
 
 ## 🎖️ Certifications & Leadership
-* [cite_start]**Certification:** Junior Web Programmer - BNSP (Badan Nasional Sertifikasi Profesi)[cite: 45].
-* [cite_start]**Leadership:** * Ketua Kementerian Sosial (2023/2024) - BEM KEMA POLSUB[cite: 26].
-    * [cite_start]Ketua Humas LDK (2024/2025) - Communication & Public Relations[cite: 32].
+* **Certification:** Junior Web Programmer - BNSP (Badan Nasional Sertifikasi Profesi).
+* **Leadership:** * Ketua Kementerian Sosial (2023/2024) - BEM KEMA POLSUB.
+    * Ketua Humas LDK (2024/2025) - Communication & Public Relations.
 
 ## 🌐 Connect with Me
 * **LinkedIn:** [dimas-ferial-hidayat](https://www.linkedin.com/in/dimas-ferial-hidayat-614014402/)
 * **GitHub:** [dimasferial05-ctrl](https://github.com/dimasferial05-ctrl)
 * **Instagram:** [@dimasefha_](https://www.instagram.com/dimasefha_/)
-* [cite_start]**Email:** dimasferial05@gmail.com [cite: 1]
+* **Email:** dimasferial05@gmail.com 
 
 ---
 © 2026 Dimas Ferial Hidayat. Built with Raw Precision.
