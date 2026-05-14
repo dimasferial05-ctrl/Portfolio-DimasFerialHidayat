@@ -1,6 +1,6 @@
 # Neo-Brutalist Portfolio — Dimas Ferial Hidayat
 
-![Dimas Ferial Profile](images/dim.jpeg)
+![Dimas Ferial Profile](images/me.png)
 
 ## 🔗 Live Demo
 [**VIEW LIVE PORTFOLIO**](https://dimasferial05-ctrl.github.io/Portfolio-DimasFerialHidayat/)
@@ -8,11 +8,11 @@
 ---
 
 ## ⚡ Overview
-Web portofolio pribadi yang mengadopsi estetika **Neo-Brutalism UI** dengan kontras tajam, bayangan blok, dan tipografi tebal. [cite_start]Proyek ini dibangun untuk mendemonstrasikan kapabilitas saya sebagai **Software Developer** yang berfokus pada integrasi AIoT dan solusi web modern[cite: 3, 4, 11].
+Web portofolio pribadi yang mengadopsi estetika **Neo-Brutalism UI** dengan kontras tajam, bayangan blok, dan tipografi tebal. Proyek ini dibangun untuk mendemonstrasikan kapabilitas saya sebagai **Software Developer** yang berfokus pada integrasi AIoT dan solusi web modern.
 
 ## 🚀 Technical Stack
 Sistem ini dibangun menggunakan teknologi berikut:
-* [cite_start]**Framework:** Tailwind CSS (Custom Config) [cite: 52]
+* [cite_start]**Framework:** Tailwind CSS (Custom Config)
 * **Fonts:** Inter (Headlines) & JetBrains Mono (Body/Code)
 * **Icons:** Material Symbols Outlined
 * **Interactions:** Intersection Observer API untuk Navigasi Aktif & Smooth Scrolling
