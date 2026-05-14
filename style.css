@@ -1,0 +1,41 @@
+/* Mengaktifkan scroll halus untuk seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Bayangan Standar (Bawah Kanan) */
+.neo-shadow {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.neo-shadow-sm {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+/* Bayangan Hover (Menuju ke Atas Kiri) - Digunakan di Selected Works */
+.hover\:neo-shadow-up:hover {
+  box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+  /* Catatan: Karena box-nya yang ditarik ke atas-kiri (-translate-x-2 & -translate-y-2 di HTML), 
+     maka bayangannya tetap di bawah kanan namun semakin besar dan terlihat terpisah ke atas */
+}
+
+/* Animasi klik menekan tombol ke dalam */
+.active-press:active {
+  transform: translate(8px, 8px) !important;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1) !important;
+}

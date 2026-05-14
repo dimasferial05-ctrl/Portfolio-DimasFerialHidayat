@@ -1,0 +1,620 @@
+<!doctype html>
+<html class="light scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#1b1b1b",
+              "primary-container": "#f4f04e",
+              "secondary-container": "#2d5bff",
+              "on-secondary-container": "#efefff",
+              "surface-container-highest": "#e2e2e2",
+              surface: "#f9f9f9",
+              secondary: "#0040df",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#6e6c00",
+              primary: "#636100",
+              "surface-variant": "#e2e2e2",
+            },
+            spacing: {
+              gutter: "24px",
+              "stack-lg": "32px",
+              "stack-md": "16px",
+              "margin-mobile": "16px",
+              "margin-desktop": "64px",
+            },
+            fontFamily: {
+              "body-lg": ["JetBrains Mono"],
+              "headline-xl": ["Inter"],
+              "headline-md": ["Inter"],
+              "headline-lg": ["Inter"],
+              "body-md": ["JetBrains Mono"],
+              code: ["JetBrains Mono"],
+            },
+            fontSize: {
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "500" }],
+              "headline-xl": [
+                "80px",
+                {
+                  lineHeight: "1.0",
+                  letterSpacing: "-0.04em",
+                  fontWeight: "900",
+                },
+              ],
+              "headline-md": ["32px", { lineHeight: "1.2", fontWeight: "800" }],
+              "headline-lg": [
+                "48px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              code: ["14px", { lineHeight: "1.4", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface text-on-background font-body-md grid-bg min-h-screen">
+    <nav
+      class="sticky top-0 w-full z-50 bg-surface border-b-4 border-on-background shadow-[0px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-gutter py-4"
+    >
+      <div
+        class="font-headline-md text-headline-md font-black tracking-tighter text-on-background uppercase"
+      >
+        MY PORTFOLIO
+      </div>
+      <div class="hidden md:flex gap-4">
+        <a
+          class="nav-link text-on-background font-bold px-4 py-1 hover:bg-secondary hover:text-on-secondary hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-1 active:translate-y-1 active:shadow-none"
+          href="#work"
+          data-section="work"
+          >Work</a
+        >
+        <a
+          class="nav-link text-on-background font-bold px-4 py-1 hover:bg-secondary hover:text-on-secondary hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-1 active:translate-y-1 active:shadow-none"
+          href="#research"
+          data-section="research"
+          >Research</a
+        >
+        <a
+          class="nav-link text-on-background font-bold px-4 py-1 hover:bg-secondary hover:text-on-secondary hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-1 active:translate-y-1 active:shadow-none"
+          href="#experience"
+          data-section="experience"
+          >Experience</a
+        >
+        <a
+          class="nav-link text-on-background font-bold px-4 py-1 hover:bg-secondary hover:text-on-secondary hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-1 active:translate-y-1 active:shadow-none"
+          href="#skills"
+          data-section="skills"
+          >Skills</a
+        >
+      </div>
+      <a
+        href="mailto:dimasferial05@gmail.com"
+        class="bg-secondary text-on-secondary border-4 border-on-background px-6 py-2 font-bold neo-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+      >
+        Connect
+      </a>
+    </nav>
+
+    <main
+      class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg space-y-32"
+    >
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center pt-8"
+      >
+        <div class="relative group cursor-crosshair">
+          <div
+            class="border-4 border-on-background bg-secondary aspect-square shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-75 group-hover:scale-110 group-hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]"
+          >
+            <img
+              alt="Dimas Ferial"
+              class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply"
+              src="images/dim.jpeg"
+            />
+            <!-- Ganti src dengan path foto profil Anda -->
+          </div>
+          <div
+            class="absolute -top-4 -left-4 bg-primary-container border-4 border-on-background px-4 py-2 font-black text-on-background rotate-[-2deg]"
+          >
+            Hello, I'm Dimas!
+          </div>
+        </div>
+        <div class="space-y-stack-md">
+          <h1
+            class="font-headline-xl text-headline-xl text-on-background break-words uppercase"
+          >
+            DIMAS <br />
+            <span
+              class="text-secondary outline-text"
+              style="-webkit-text-stroke: 2px #1b1b1b; color: transparent"
+              >FERIAL</span
+            >
+            <br />
+            HIDAYAT
+          </h1>
+          <p
+            class="font-body-lg text-body-lg bg-on-background text-surface px-4 py-2 inline-block"
+          >
+            Software Developer
+          </p>
+          <div class="flex gap-4">
+            <div
+              class="bg-primary-container border-2 border-on-background px-3 py-1 font-bold rotate-1"
+            >
+              #DEVELOPER
+            </div>
+            <div
+              class="bg-secondary-container text-on-secondary-container border-2 border-on-background px-3 py-1 font-bold rotate-[-2deg]"
+            >
+              #IoT_ENG
+            </div>
+            <div
+              class="bg-surface-container-highest border-2 border-on-background px-3 py-1 font-bold rotate-1"
+            >
+              #ANALYST
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="space-y-stack-md pt-16">
+        <div class="flex items-center gap-4">
+          <h2
+            class="font-headline-lg text-headline-lg uppercase underline decoration-4 underline-offset-8"
+          >
+            Projects Experience
+          </h2>
+          <div class="h-1 bg-on-background grow"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          <div
+            class="bg-surface border-4 border-on-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group overflow-hidden hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:-translate-x-2"
+          >
+            <div
+              class="h-48 bg-primary-container border-b-4 border-on-background relative overflow-hidden flex justify-center items-center"
+            >
+              <img
+                alt="Smart-Stay"
+                class="w-full h-full object-cover"
+                src="images/project-smartstay.jpg"
+              />
+              <div class="absolute inset-0 bg-black/20"></div>
+              <div
+                class="absolute bottom-2 left-2 bg-on-background text-surface px-2 py-1 text-xs font-code uppercase"
+              >
+                IoT & AIoT Solutions
+              </div>
+            </div>
+            <div class="p-stack-md space-y-2">
+              <h3
+                class="font-headline-md text-headline-md text-2xl leading-none uppercase"
+              >
+                Smart-Stay
+              </h3>
+              <p class="text-on-background font-code text-sm">
+                Sistem Smart Gate & Access Logger Berbasis 10T dengan Al Facial
+                Access Control dan Web pada Bumi Rafka Kost. Sistem ini
+                dirancang untuk meningkatkan keamanan dan efisiensi manajemen
+                akses di lingkungan kost dengan memanfaatkan teknologi IoT dan
+                AI untuk pengenalan wajah serta pencatatan akses secara
+                real-time melalui platform web.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface border-4 border-on-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group overflow-hidden hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:-translate-x-2"
+          >
+            <div
+              class="h-48 bg-secondary-container border-b-4 border-on-background relative overflow-hidden flex justify-center items-center"
+            >
+              <img
+                alt="Smart Chat TB"
+                class="w-full h-full object-cover"
+                src="images/project-smart-chat-tb.jpg"
+              />
+              <div class="absolute inset-0 bg-black/20"></div>
+              <div
+                class="absolute bottom-2 left-2 bg-on-background text-surface px-2 py-1 text-xs font-code uppercase"
+              >
+                AI Chatbot
+              </div>
+            </div>
+            <div class="p-stack-md space-y-2">
+              <h3
+                class="font-headline-md text-headline-md text-2xl leading-none uppercase"
+              >
+                Aplikasi Smart Chat TB
+              </h3>
+              <p class="text-on-background font-code text-sm">
+                ChatBot Al Dalam Pencegahan Tuberkulosis Berbasis Mobile untuk
+                Deteksi Dini dan Pemantauan Pasien TB.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface border-4 border-on-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group overflow-hidden hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:-translate-x-2"
+          >
+            <div
+              class="h-48 bg-surface-container-highest border-b-4 border-on-background relative overflow-hidden flex justify-center items-center"
+            >
+              <img
+                alt="Web Marketing System"
+                class="w-full h-full object-cover"
+                src="images/project-web-marketing.jpg"
+              />
+              <div class="absolute inset-0 bg-black/20"></div>
+              <div
+                class="absolute bottom-2 left-2 bg-on-background text-surface px-2 py-1 text-xs font-code uppercase"
+              >
+                Web-based Marketing & Ordering System
+              </div>
+            </div>
+            <div class="p-stack-md space-y-2">
+              <h3
+                class="font-headline-md text-headline-md text-2xl leading-none uppercase"
+              >
+                Sistem Pemasaran & Pemesanan Berbasis Web
+              </h3>
+              <p class="text-on-background font-code text-sm">
+                Sistem Pemasaran & Pemesanan Berbasis Web (Batik Ganasan & Twee
+                Coffee) System. Sistem ini dirancang untuk meningkatkan
+                visibilitas online dan memudahkan pelanggan dalam melakukan
+                pemesanan produk secara efisien.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface border-4 border-on-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 group overflow-hidden hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:-translate-x-2"
+          >
+            <div
+              class="h-48 bg-primary-container border-b-4 border-on-background relative overflow-hidden flex justify-center items-center"
+            >
+              <img
+                alt="Aplikasi Reservasi dan Rekam Medis"
+                class="w-full h-full object-cover"
+                src="images/project-medical-record.jpg"
+              />
+              <div class="absolute inset-0 bg-black/20"></div>
+              <div
+                class="absolute bottom-2 left-2 bg-on-background text-surface px-2 py-1 text-xs font-code uppercase"
+              >
+                Web-based Reservation & Medical Record System
+              </div>
+            </div>
+            <div class="p-stack-md space-y-2">
+              <h3
+                class="font-headline-md text-headline-md text-2xl leading-none uppercase"
+              >
+                Aplikasi Reservasi dan Rekam Medis
+              </h3>
+              <p class="text-on-background font-code text-sm">
+                Aplikasi Reservasi dan Rekam Medis Berbasis Web untuk Klinik
+                Pratama Amanah. Sistem ini dirancang untuk memudahkan pasien
+                dalam melakukan reservasi online dan memberikan akses cepat ke
+                rekam medis mereka, meningkatkan efisiensi operasional klinik
+                dan kualitas pelayanan kesehatan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="research"
+        class="bg-secondary text-on-secondary border-4 border-on-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-gutter relative overflow-hidden pt-16"
+      >
+        <div
+          class="absolute top-0 right-0 bg-primary-container text-on-background border-l-4 border-b-4 border-on-background px-6 py-2 font-black rotate-3"
+        >
+          PUBLISHED_2025
+        </div>
+        <div class="flex flex-col md:flex-row gap-gutter items-center">
+          <div
+            class="w-full md:w-1/3 aspect-[3/4] bg-on-background border-4 border-on-background shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden rotate-[-1deg]"
+          >
+            <img
+              alt="Jurnal Smart Chat TB"
+              class="w-full h-full object-cover"
+              src="images/jurnal.png"
+            />
+          </div>
+          <div class="flex-1 space-y-stack-md">
+            <h2
+              class="font-headline-lg text-headline-lg uppercase leading-tight"
+            >
+              Smart Chat TB: Aplikasi Mobile untuk Deteksi Dini dan Monitoring Pengobatan Tuberkulosis
+            </h2>
+            <p
+              class="font-code text-primary-container font-bold text-xl uppercase"
+            >
+              SISTEMATIK: JOURNAL OF INFORMATICS AND INFORMATION SYSTEMS (2025)
+            </p>
+
+            <a
+              href="https://journal.publinesia.com/index.php/sistematik/article/view/192"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-primary-container text-on-background border-4 border-on-background px-8 py-4 font-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2 w-max transition-all duration-75 active:translate-y-2 active:translate-x-2 active:shadow-none hover:bg-yellow-300"
+            >
+              READ PAPER
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="experience"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg pt-16"
+      >
+        <section class="space-y-stack-md">
+          <h2
+            class="font-headline-md text-headline-md uppercase bg-on-background text-surface inline-block px-4 py-1"
+          >
+            CERTIFICATIONS_
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <div
+              class="bg-surface border-4 border-on-background p-stack-md shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] rotate-[-2deg] transition-transform hover:rotate-0"
+            >
+              <div
+                class="w-16 h-16 bg-primary-container border-2 border-on-background flex items-center justify-center mb-4"
+              >
+                <span
+                  class="material-symbols-outlined text-4xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >verified</span
+                >
+              </div>
+              <h3
+                class="font-headline-md text-headline-md text-xl leading-tight uppercase"
+              >
+                Junior Web Programmer
+              </h3>
+              <p class="font-code text-sm uppercase">
+                BNSP - National Professional Certification Board
+              </p>
+            </div>
+        </section>
+
+        <section class="space-y-stack-md">
+          <h2
+            class="font-headline-md text-headline-md uppercase bg-secondary text-on-secondary inline-block px-4 py-1"
+          >
+            LEADERSHIP_ROLE
+          </h2>
+          <div
+            class="space-y-gutter relative before:content-[''] before:absolute before:left-8 before:top-0 before:bottom-0 before:w-1 before:bg-on-background"
+          >
+            <div class="relative pl-16 group">
+              <div
+                class="absolute left-4 top-2 w-8 h-8 bg-primary-container border-4 border-on-background z-10 flex items-center justify-center group-hover:scale-125 transition-transform"
+              >
+                <span
+                  class="material-symbols-outlined text-xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >handshake</span
+                >
+              </div>
+              <div
+                class="bg-surface border-4 border-on-background p-stack-md shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all group-hover:bg-primary-container"
+              >
+                <h3 class="font-bold text-lg uppercase leading-none">
+                  Ketua Kementerian Sosial 2023/2024
+                </h3>
+                <p class="font-code uppercase text-sm">BEM KEMA POLSUB</p>
+              </div>
+            </div>
+            <div class="relative pl-16 group">
+              <div
+                class="absolute left-4 top-2 w-8 h-8 bg-secondary-container text-on-secondary-container border-4 border-on-background z-10 flex items-center justify-center group-hover:scale-125 transition-transform"
+              >
+                <span
+                  class="material-symbols-outlined text-xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >campaign</span
+                >
+              </div>
+              <div
+                class="bg-surface border-4 border-on-background p-stack-md shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all group-hover:bg-secondary-container"
+              >
+                <h3 class="font-bold text-lg uppercase leading-none">
+                  Ketua Humas LDK 2024/2025
+                </h3>
+                <p class="font-code uppercase text-sm">
+                  Communication & Public Relations
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section
+        id="skills"
+        class="text-center space-y-stack-md py-stack-lg border-y-4 border-on-background pt-16"
+      >
+        <h2
+          class="font-headline-lg text-headline-lg uppercase italic tracking-widest"
+        >
+          TECHNICAL_STACK
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div
+            class="bg-primary-container border-2 border-on-background px-6 py-2 font-black text-xl rotate-1 hover:animate-bounce cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            LARAVEL
+          </div>
+          <div
+            class="bg-secondary-container text-on-secondary border-2 border-on-background px-6 py-2 font-black text-xl rotate-[-2deg] hover:animate-bounce cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            REACT
+          </div>
+          <div
+            class="bg-on-background text-surface border-2 border-on-background px-6 py-2 font-black text-xl rotate-[3deg] hover:animate-bounce cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            FIGMA
+          </div>
+          <div
+            class="bg-surface border-2 border-on-background px-6 py-2 font-black text-xl rotate-[-1deg] hover:animate-bounce cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            PYTHON
+          </div>
+          <div
+            class="bg-primary border-2 border-on-background px-6 py-2 font-black text-xl rotate-[2deg] hover:animate-bounce cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-surface"
+          >
+            AIOT
+          </div>
+          <div
+            class="bg-surface-container-highest border-2 border-on-background px-6 py-2 font-black text-xl rotate-[-3deg] hover:animate-bounce cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+          >
+            SYSTEM ANALYST
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-on-background border-t-4 border-on-background w-full py-stack-lg px-margin-mobile md:px-margin-desktop mt-16"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-gutter w-full"
+      >
+        <div class="space-y-4 text-center md:text-left">
+          <div
+            class="font-headline-sm text-headline-md font-black text-primary-container uppercase"
+          >
+            DIMAS FERIAL HIDAYAT
+          </div>
+          <div
+            class="font-code text-code text-surface uppercase tracking-wider"
+          >
+            dimasferial05@gmail.com
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/dimas-ferial-hidayat-614014402/"
+            target="_blank"
+            class="bg-surface text-on-background border-2 border-on-background px-4 py-2 font-bold hover:bg-primary-container hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none transition-all"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/dimasferial05-ctrl"
+            target="_blank"
+            class="bg-surface text-on-background border-2 border-on-background px-4 py-2 font-bold hover:bg-primary-container hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none transition-all"
+            >GitHub</a
+          >
+          <a
+            href="https://www.instagram.com/dimasefha_/"
+            target="_blank"
+            class="bg-surface text-on-background border-2 border-on-background px-4 py-2 font-bold hover:bg-primary-container hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none transition-all"
+            >Instagram</a
+          >
+          <a
+            href="mailto:dimasferial05@gmail.com"
+            class="bg-surface text-on-background border-2 border-on-background px-4 py-2 font-bold hover:bg-primary-container hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none transition-all"
+            >Email</a
+          >
+        </div>
+      </div>
+      <div
+        class="mt-stack-lg pt-stack-md border-t border-surface-variant/20 text-center"
+      >
+        <p class="font-code text-code text-surface-variant uppercase">
+          DIMAS FERIAL HIDAYAT © 2026. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Intersection Observer untuk mendeteksi section yang sedang dilihat
+      const observerOptions = {
+        root: null,
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            // Hapus active class dari semua nav links
+            navLinks.forEach((link) => {
+              link.classList.remove(
+                "bg-primary-container",
+                "text-on-primary-container",
+                "border-2",
+                "border-on-background",
+              );
+              link.classList.add("text-on-background");
+            });
+
+            // Tambahkan active class ke nav link yang sesuai
+            const activeLink = document.querySelector(
+              `.nav-link[data-section="${sectionId}"]`,
+            );
+            if (activeLink) {
+              activeLink.classList.add(
+                "bg-primary-container",
+                "text-on-primary-container",
+                "border-2",
+                "border-on-background",
+              );
+              activeLink.classList.remove("text-on-background");
+            }
+          }
+        });
+      }, observerOptions);
+
+      // Observe semua sections
+      const sections = document.querySelectorAll(
+        'section[id="work"], section[id="research"], div[id="experience"], section[id="skills"]',
+      );
+      sections.forEach((section) => observer.observe(section));
+
+      // Set active link awal (work)
+      const initialActiveLink = document.querySelector(
+        '.nav-link[data-section="work"]',
+      );
+      if (initialActiveLink) {
+        initialActiveLink.classList.add(
+          "bg-primary-container",
+          "text-on-primary-container",
+          "border-2",
+          "border-on-background",
+        );
+        initialActiveLink.classList.remove("text-on-background");
+      }
+    </script>
+  </body>
+</html>
